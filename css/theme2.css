@@ -1,0 +1,65 @@
+:root {
+  /* Backgrounds */
+
+  --main-background: hsl(0, 0%, 90%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+
+  /* Keys */
+
+  --key-background: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+
+  --key-red-background: hsl(25, 98%, 40%);
+  --key-red-shadow: hsl(25, 99%, 27%);
+
+  --key-digits-background: hsl(45, 7%, 89%);
+  --key-digits-shadow: hsl(35, 11%, 61%);
+
+  /* Text */
+
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+  --White: hsl(0, 0%, 100%);
+}
+body,
+html {
+  min-height: 100vh;
+  background-color: var(--main-background);
+}
+.calculator {
+  border: 2px solid #222;
+}
+.theme-box {
+  color: var(--Very-dark-grayish-yellow);
+}
+.themes {
+  background-color: var(--keypad-background);
+}
+.output-box {
+  background-color: var(--screen-background);
+  color: var(--Very-dark-grayish-yellow);
+  border: 1px solid #222;
+}
+.keys-box {
+  background-color: var(--keypad-background);
+  border: 1px solid #222;
+}
+.key {
+  background-color: var(--key-digits-background);
+  color: var(--Very-dark-grayish-yellow);
+  box-shadow: 0px 3px 0px var(--key-digits-shadow);
+}
+#reset {
+  background-color: var(--key-background);
+  box-shadow: 0px 3px 0px var(--key-shadow);
+  color: var(--White);
+}
+#Del {
+  background-color: var(--key-background);
+  box-shadow: 0px 3px 0px var(--key-shadow);
+  color: var(--White);
+}
+#equal {
+  color: var(--White);
+  box-shadow: 0px 3px 0px var(--Dark-red);
+}

@@ -1,0 +1,64 @@
+:root {
+  /* Backgrounds */
+
+  --main-background: hsl(268, 75%, 9%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+
+  /* Keys */
+
+  --key-background: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+
+  --key-cyan-background: hsl(176, 100%, 44%);
+  --key-cyan-shadow: hsl(177, 92%, 70%);
+
+  --key-digits-background: hsl(268, 47%, 21%);
+  --key-digits-shadow: hsl(290, 70%, 36%);
+
+  /* Text */
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White: hsl(0, 0%, 100%);
+}
+body,
+html {
+  min-height: 100vh;
+  background-color: var(--main-background);
+}
+.theme-box {
+  color: var(--Light-yellow);
+}
+.themes {
+  background-color: var(--keypad-background);
+}
+.output-box {
+  background-color: var(--screen-background);
+  color: var(--Light-yellow);
+}
+.keys-box {
+  background-color: var(--keypad-background);
+}
+.key {
+  background-color: var(--key-digits-background);
+  color: var(--Light-yellow);
+  box-shadow: 0px 3px 0px var(--key-digits-shadow);
+}
+#reset {
+  background-color: var(--key-background);
+  box-shadow: 0px 3px 0px var(--key-shadow);
+  color: var(--White);
+}
+#Del {
+  background-color: var(--key-background);
+  box-shadow: 0px 3px 0px var(--key-shadow);
+  color: var(--White);
+}
+#equal {
+  color: var(--screen-background);
+  background-color: var(--key-cyan-background);
+  box-shadow: 0px 3px 0px var(--key-cyan-shadow);
+}
+input:checked {
+  background: var(--key-cyan-background);
+}
